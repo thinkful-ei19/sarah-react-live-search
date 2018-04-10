@@ -13,7 +13,7 @@ export default class LiveSearch extends React.Component {
     }
 
     render() {
-      const characters = this.props.characters.filter(character => character.name.includes(this.state.searchTerm)); 
+      const characters = this.props.characters.filter(character => character.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())); 
     
 
     return (
